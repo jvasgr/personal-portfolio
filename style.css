@@ -1,0 +1,434 @@
+/* ================================
+   1. GENERAL SETTINGS
+================================ */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --bg: #080b14;
+    --panel: #111827;
+    --text: #eef2ff;
+    --muted: #9ba7bd;
+    --cyan: #35d8e8;
+    --purple: #9b72ff;
+    --line: rgba(255, 255, 255, 0.09);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Inter, sans-serif;
+    background: radial-gradient(
+        circle at 80% 8%,
+        rgba(91, 54, 170, 0.18),
+        transparent 28%
+    ), var(--bg);
+    color: var(--text);
+    line-height: 1.7;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+/* ================================
+   2. HEADER AND NAVIGATION
+================================ */
+
+.site-header {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 18px 8%;
+    background: rgba(8, 11, 20, 0.88);
+    backdrop-filter: blur(14px);
+    border-bottom: 1px solid var(--line);
+}
+
+.logo {
+    font-weight: 800;
+    font-size: 1.15rem;
+}
+
+.logo span,
+.hero h1 span {
+    color: var(--cyan);
+}
+
+.nav {
+    display: flex;
+    gap: 28px;
+    color: var(--muted);
+    font-size: 0.9rem;
+}
+
+.nav a:hover {
+    color: var(--cyan);
+}
+
+.header-actions {
+    display: flex;
+    gap: 10px;
+}
+
+.language-toggle,
+.menu-toggle {
+    border: 1px solid var(--line);
+    background: var(--panel);
+    color: var(--cyan);
+    padding: 8px 12px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 700;
+}
+
+.menu-toggle {
+    display: none;
+}
+
+/* ================================
+   3. HERO SECTION
+================================ */
+
+.section {
+    padding: 100px 10%;
+}
+
+.hero {
+    min-height: 610px;
+    display: grid;
+    grid-template-columns: 1.35fr 0.8fr;
+    align-items: center;
+    gap: 60px;
+}
+
+.eyebrow,
+.section-label,
+.project-type {
+    color: var(--cyan);
+    font-size: 0.75rem;
+    letter-spacing: 2px;
+    font-weight: 700;
+}
+
+.hero h1 {
+    font-size: clamp(2.7rem, 6vw, 5.2rem);
+    line-height: 1.08;
+    letter-spacing: -3px;
+    margin: 18px 0 12px;
+}
+
+.hero h2 {
+    color: var(--purple);
+    font-size: clamp(1.3rem, 2.5vw, 2rem);
+}
+
+.intro,
+.section-text {
+    color: var(--muted);
+    max-width: 650px;
+    margin-top: 22px;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 14px;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.button {
+    display: inline-block;
+    padding: 12px 20px;
+    border-radius: 8px;
+    font-weight: 700;
+    font-size: 0.9rem;
+    transition: transform 0.2s;
+}
+
+.button:hover {
+    transform: translateY(-3px);
+}
+
+.primary {
+    background: linear-gradient(100deg, var(--cyan), #76a9ff);
+    color: #07111b;
+}
+
+.secondary {
+    border: 1px solid var(--line);
+}
+
+.hero-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 18px;
+}
+
+.avatar-placeholder {
+    width: min(290px, 70vw);
+    aspect-ratio: 1;
+    border-radius: 28px;
+    display: grid;
+    place-content: center;
+    text-align: center;
+    border: 1px solid rgba(53, 216, 232, 0.3);
+    background: linear-gradient(
+        145deg,
+        rgba(53, 216, 232, 0.13),
+        rgba(155, 114, 255, 0.18)
+    );
+    box-shadow: 0 0 70px rgba(95, 85, 220, 0.14);
+    color: var(--cyan);
+    font-weight: 800;
+    letter-spacing: 3px;
+}
+
+.status {
+    color: var(--muted);
+    font-size: 0.78rem;
+    display: flex;
+    align-items: center;
+    gap: 9px;
+}
+
+.status-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: #4ade80;
+}
+
+/* ================================
+   4. ABOUT AND SKILLS
+================================ */
+
+.content-section {
+    border-top: 1px solid var(--line);
+}
+
+.content-section h2,
+.contact-section h2 {
+    font-size: clamp(2rem, 4vw, 3rem);
+    letter-spacing: -1.5px;
+    margin: 12px 0 20px;
+}
+
+.skill-grid,
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 18px;
+    margin-top: 35px;
+}
+
+.skill-card,
+.project-card {
+    background: linear-gradient(
+        145deg,
+        rgba(19, 28, 46, 0.92),
+        rgba(13, 18, 31, 0.92)
+    );
+    border: 1px solid var(--line);
+    border-radius: 14px;
+    padding: 25px;
+}
+
+.skill-card span {
+    color: var(--cyan);
+    font-size: 0.8rem;
+}
+
+.skill-card h3,
+.project-info h3 {
+    margin: 8px 0;
+}
+
+.skill-card p,
+.project-info p,
+.contact-section > p:not(.section-label) {
+    color: var(--muted);
+    font-size: 0.92rem;
+}
+
+.note {
+    color: var(--muted);
+    font-size: 0.8rem;
+    margin-top: 20px;
+}
+
+/* ================================
+   5. PROJECTS
+================================ */
+
+.project-card {
+    padding: 0;
+    overflow: hidden;
+}
+
+.project-art {
+    height: 155px;
+    display: grid;
+    place-items: center;
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.art-one {
+    background: linear-gradient(130deg, #0b5365, #493278);
+}
+
+.art-two {
+    background: linear-gradient(130deg, #252c49, #5b397b);
+}
+
+.project-info {
+    padding: 23px;
+}
+
+.project-type {
+    font-size: 0.65rem;
+}
+
+.tag-list {
+    display: inline-block;
+    color: var(--cyan);
+    font-size: 0.75rem;
+    margin-top: 15px;
+}
+
+/* ================================
+   6. CONTACT AND FOOTER
+================================ */
+
+.contact-section {
+    text-align: center;
+    background: radial-gradient(
+        ellipse at center,
+        rgba(64, 90, 160, 0.13),
+        transparent 65%
+    );
+}
+
+.contact-section > p:not(.section-label) {
+    max-width: 560px;
+    margin: 0 auto 25px;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    padding: 25px 10%;
+    border-top: 1px solid var(--line);
+    color: var(--muted);
+    font-size: 0.78rem;
+}
+
+/* ================================
+   7. RESPONSIVE DESIGN
+================================ */
+
+@media (max-width: 760px) {
+    .site-header {
+        padding: 15px 6%;
+    }
+
+    .menu-toggle {
+        display: inline-block;
+    }
+
+    .nav {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        flex-direction: column;
+        gap: 0;
+        padding: 12px 6%;
+        background: #0d1321;
+        border-bottom: 1px solid var(--line);
+    }
+
+    .nav.open {
+        display: flex;
+    }
+
+    .nav a {
+        padding: 10px 0;
+    }
+
+    .hero {
+        grid-template-columns: 1fr;
+        padding-top: 75px;
+        text-align: center;
+        gap: 45px;
+    }
+
+    .hero-buttons {
+        justify-content: center;
+    }
+
+    .intro {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .section {
+        padding: 75px 7%;
+    }
+
+    .skill-grid,
+    .project-grid {
+        grid-template-columns: 1fr;
+    }
+
+    footer {
+        padding: 22px 7%;
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+
+/*   TECH AVATAR   */
+.avatar-placeholder {
+    gap: 12px;
+}
+
+.code-symbol {
+    font-size: 5rem;
+    font-weight: 800;
+    color: var(--cyan);
+    text-shadow: 0 0 25px rgba(53, 216, 232, 0.7);
+}
+
+.avatar-text{
+    font-size: 0.7rem;
+    letter-spacing: 4px;
+    color: var(--muted);
+}
+
+.developer-avatar{
+    width: min(350px, 85vw);
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 2px solid var(--cyan);
+    box-shadow:
+        0 0 25px rgba(53, 216, 232, 0.35),
+        0 0 55px rgba(155, 114, 255, 0.25); 
+}

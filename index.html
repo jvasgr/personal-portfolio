@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Personal portfolio of an aspiring web developer.">
+    <title>Personal Portfolio</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="site-header">
+        <a class="logo" href="#home">&lt;Portfolio<span>/&gt;</span></a>
+
+        <nav class="nav" id="nav">
+            <a href="#about" data-en="About" data-el="Σχετικά">About</a>
+            <a href="#skills" data-en="Skills" data-el="Δεξιότητες">Skills</a>
+            <a href="#projects" data-en="Projects" data-el="Projects">Projects</a>
+            <a href="#contact" data-en="Contact" data-el="Επικοινωνία">Contact</a>
+        </nav>
+
+        <div class="header-actions">
+            <button class="language-toggle" id="languageToggle" type="button">EL</button>
+            <button class="menu-toggle" id="menuToggle" type="button">☰</button>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero section" id="home">
+            <div class="hero-copy">
+                <p class="eyebrow" data-en="HELLO, WORLD! I'M" data-el="ΓΕΙΑ ΣΟΥ! ΕΙΜΑΙ Ο">
+                    HELLO, WORLD! I'M
+                </p>
+
+                <h1>IOANNIS VASILAKOS<span>.</span></h1>
+
+                <h2 data-en="Junior Web Developer" data-el="Junior Web Developer">
+                    Junior Web Developer
+                </h2>
+
+                <p class="intro"
+                   data-en="I enjoy learning how the web works and building clean, useful digital experiences. This portfolio is where I share my progress, skills and projects."
+                   data-el="Μου αρέσει να μαθαίνω πώς λειτουργεί ο ιστός και να δημιουργώ όμορφες και χρήσιμες ψηφιακές εμπειρίες. Σε αυτό το portfolio παρουσιάζω την πρόοδό μου, τις δεξιότητες και τα projects μου.">
+                    I enjoy learning how the web works and building clean, useful digital experiences.
+                    This portfolio is where I share my progress, skills and projects.
+                </p>
+
+                <div class="hero-buttons">
+                    <a class="button primary" href="#projects"
+                       data-en="Explore my work" data-el="Δες τα projects μου">
+                        Explore my work
+                    </a>
+
+                    <a class="button secondary" href="#contact"
+                       data-en="Get in touch" data-el="Επικοινώνησε μαζί μου">
+                        Get in touch
+                    </a>
+                </div>
+            </div>
+
+            <div class="hero-card">
+                <img
+                    src="images/developer-avatar.png"
+                    alt="Developer Avatar"
+                    class="developer-avatar"
+                    >
+
+                <div class="status">
+                    <span class="status-dot"></span>
+                    <span data-en="Open to learning opportunities"
+                          data-el="Ανοιχτός σε ευκαιρίες μάθησης">
+                        Open to learning opportunities
+                    </span>
+                </div>
+            </div>
+        </section>
+
+        <section class="section content-section" id="about">
+            <p class="section-label" data-en="01 / ABOUT" data-el="01 / ΣΧΕΤΙΚΑ">
+                01 / ABOUT
+            </p>
+
+            <h2 data-en="A little about me" data-el="Λίγα λόγια για μένα">
+                A little about me
+            </h2>
+
+            <p class="section-text"
+               data-en="I have hands-on experience in computer hardware and IT support, including PC builds, desktop and laptop servicing, Windows installation and software configuration. I have also worked for six months as a Computer Technician in a professional environment. Currently, I am expanding my knowledge into web development, learning new technologies and building personal projects."
+               data-el="Διαθέτω πρακτική εμπειρία στον τομέα του hardware και της τεχνικής υποστήριξης υπολογιστών, με ενασχόληση σε συναρμολογήσεις PC, service desktop και laptop, εγκατάσταση Windows και παραμετροποίηση λογισμικού. Έχω επίσης εργαστεί για έξι μήνες ως τεχνικός Η/Υ σε επαγγελματικό περιβάλλον. Αυτή την περίοδο διευρύνω τις γνώσεις μου στο Web Development, μαθαίνοντας νέες τεχνολογίες και δημιουργώντας προσωπικά projects.">
+                I have hands-on experience in computer hardware and IT support, including PC builds, desktop and laptop servicing, Windows installation and software configuration.
+                I have also worked for six months as a Computer Technician in a professional environment. Currently, I am expanding my knowledge into web development, learning new technologies and building personal projects.
+            </p>
+        </section>
+
+        <section class="section content-section" id="skills">
+            <p class="section-label" data-en="02 / SKILLS" data-el="02 / ΔΕΞΙΟΤΗΤΕΣ">
+                02 / SKILLS
+            </p>
+
+            <h2 data-en="What I'm learning" data-el="Τι μαθαίνω">
+                What I'm learning
+            </h2>
+
+            <div class="skill-grid">
+
+             <article class="skill-card">
+                 <span>01</span>
+                 <h3>PC Builds</h3>
+                 <p data-en="PC assembly, upgrades and hardware configuration."
+                 data-el="Συναρμολόγηση, αναβαθμίσεις και ρυθμίσεις hardware.">
+                 PC assembly, upgrades and hardware configuration.
+                 </p>
+            </article>
+
+            <article class="skill-card">
+                <span>02</span>
+                <h3>PC Service</h3>
+                <p data-en="Desktop and laptop maintenance and troubleshooting."
+                data-el="Συντήρηση και διάγνωση προβλημάτων Desktop και Laptop.">
+                Desktop and laptop maintenance and troubleshooting.
+                </p>
+            </article>
+
+            <article class="skill-card">
+                <span>03</span>
+                <h3>Windows & Software</h3>
+                <p data-en="Windows installation and software configuration."
+                data-el="Εγκατάσταση Windows και παραμετροποίηση λογισμικού.">
+                Windows installation and software configuration.
+                </p>
+            </article>
+
+            <article class="skill-card">
+                <span>04</span>
+                <h3>HTML5</h3>
+                <p data-en="Fundamentals of web page structure."
+                data-el="Βασικές γνώσεις δομής ιστοσελίδων.">
+                Fundamentals of web page structure.
+                </p>
+            </article>
+
+            <article class="skill-card">
+                <span>05</span>
+                <h3>CSS3</h3>
+                <p data-en="Fundamentals of styling and responsive layouts."
+                data-el="Βασικές γνώσεις εμφάνισης και responsive σχεδιασμού.">
+                Fundamentals of styling and responsive layouts.
+                </p>
+            </article>
+
+            <article class="skill-card">
+                <span>06</span>
+                <h3>JavaScript</h3>
+                <p data-en="Currently learning interactive web development."
+                data-el="Εκμάθηση διαδραστικών λειτουργιών για ιστοσελίδες.">
+                Currently learning interactive web development.
+                </p>
+            </article>
+
+        </div>
+
+            <p class="note"
+               data-en="We'll update this section as you gain confidence and complete more work."
+               data-el="Θα ενημερώνουμε αυτή την ενότητα όσο αποκτάς εμπειρία και ολοκληρώνεις νέα projects.">
+                We'll update this section as you gain confidence and complete more work.
+            </p>
+        </section>
+
+        <section class="section content-section" id="projects">
+            <p class="section-label" data-en="03 / PROJECTS" data-el="03 / PROJECTS">
+                03 / PROJECTS
+            </p>
+
+            <h2 data-en="Things I've built" data-el="Οι δημιουργίες μου">
+                Things I've built
+            </h2>
+
+            <div class="project-grid">
+                <article class="project-card">
+                    <div class="project-art art-one">01</div>
+
+                    <div class="project-info">
+                        <p class="project-type" data-en="PERSONAL WEBSITE" data-el="ΠΡΟΣΩΠΙΚΗ ΙΣΤΟΣΕΛΙΔΑ">
+                            PERSONAL WEBSITE
+                        </p>
+
+                        <h3 data-en="My Portfolio" data-el="Το Portfolio μου">
+                            My Portfolio
+                        </h3>
+
+                        <p data-en="A responsive bilingual website introducing me and showcasing my development journey."
+                           data-el="Μια responsive δίγλωσση ιστοσελίδα που παρουσιάζει εμένα και την πορεία μου στο web development.">
+                            A responsive bilingual website introducing me and showcasing my development journey.
+                        </p>
+
+                        <span class="tag-list">HTML · CSS · JavaScript</span>
+                    </div>
+                </article>
+
+                <article class="project-card">
+                    <div class="project-art art-two">02</div>
+
+                    <div class="project-info">
+                        <p class="project-type" data-en="NEXT PROJECT" data-el="ΕΠΟΜΕΝΟ PROJECT">
+                            NEXT PROJECT
+                        </p>
+
+                        <h3 data-en="Coming soon" data-el="Σύντομα κοντά σου">
+                            Coming soon
+                        </h3>
+
+                        <p data-en="This space is ready for the next project you create. We will add it here together."
+                           data-el="Αυτός ο χώρος είναι έτοιμος για το επόμενο project που θα δημιουργήσεις. Θα το προσθέσουμε εδώ μαζί.">
+                            This space is ready for the next project you create.
+                            We will add it here together.
+                        </p>
+
+                        <span class="tag-list">In progress</span>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section class="section contact-section" id="contact">
+            <p class="section-label" data-en="04 / CONTACT" data-el="04 / ΕΠΙΚΟΙΝΩΝΙΑ">
+                04 / CONTACT
+            </p>
+
+            <h2 data-en="Let's connect." data-el="Ας επικοινωνήσουμε.">
+                Let's connect.
+            </h2>
+
+            <p data-en="Have an opportunity, an idea or simply want to say hello? Feel free to send me a message."
+               data-el="Έχεις κάποια επαγγελματική ευκαιρία, μια ιδέα ή απλώς θέλεις να πεις ένα γεια; Μπορείς να μου στείλεις μήνυμα.">
+                Have an opportunity, an idea or simply want to say hello?
+                Feel free to send me a message.
+            </p>
+
+            <a class="button primary" href="mailto:your.email@example.com">
+                your.email@example.com
+            </a>
+        </section>
+    </main>
+
+    <footer>
+        <span>© <span id="year"></span> YOUR FULL NAME</span>
+        <span data-en="Built with curiosity & code."
+              data-el="Φτιαγμένο με περιέργεια και κώδικα.">
+            Built with curiosity &amp; code.
+        </span>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
