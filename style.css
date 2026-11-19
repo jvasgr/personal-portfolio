@@ -432,3 +432,74 @@ footer {
         0 0 25px rgba(53, 216, 232, 0.35),
         0 0 55px rgba(155, 114, 255, 0.25); 
 }
+
+/* EXPERIENCE SECTION */
+
+.experience-card {
+    margin-top: 30px;
+    padding: 30px;
+    background: linear-gradient(
+        145deg,
+        rgba(19, 28, 46, 0.95),
+        rgba(13, 18, 31, 0.95)
+    );
+    border: 1px solid var(--line);
+    border-left: 3px solid var(--cyan);
+    border-radius: 14px;
+}
+
+.experience-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.experience-header h3 {
+    font-size: 1.3rem;
+}
+
+.experience-company {
+    color: var(--purple);
+    font-size: 0.9rem;
+}
+
+.experience-duration {
+    color: var(--cyan);
+    border: 1px solid rgba(53, 216, 232, 0.3);
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+}
+
+.experience-description {
+    color: var(--muted);
+    margin: 22px 0;
+}
+
+.experience-card ul {
+    padding-left: 20px;
+    color: var(--muted);
+}
+
+.experience-card li {
+    margin: 10px 0;
+}
+
+/* PERSONAL PROJECT CARDS */
+.art-three {
+    background: linear-gradient(
+        130deg,
+        #0c5260,
+        #124b78
+    );
+}
+
+.art-four {
+    background: linear-gradient(
+        130deg,
+        #34245f,
+        #633d8d
+    );
+}
